@@ -1,0 +1,202 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+
+body {background-color: black; 
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  margin-bottom: 0px;
+  background: #000;
+  border: none;
+  color: #8c8c8c;
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.2vh;
+  cursor: crosshair;
+  z-index: 999;
+}
+
+.button:hover {
+  background-color: #000;
+  color: #4d4d4d;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #000;
+}
+
+.button.is-checked {
+  color: #8c8c8c;
+}
+
+.button:active {
+
+}
+
+
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+  z-index:999;
+}
+
+.button-group .button {
+  float: left;
+
+  margin-left: 0;
+  margin-right: 0px;
+  z-index:999;
+}
+
+.button-group .button:first-child { border-radius: 0em 0 0 0em; }
+.button-group .button:last-child { border-radius: 0 0em 0em 0; }
+
+/* ---- grid ---- */
+
+.grid {
+  border: 0px solid #000;
+  max-width: 100%;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+
+
+/* ---- 호버 ----*/
+/*
+  css-only-tooltip version 1.0.0
+  ⓒ 2015 AHN JAE-HA http://github.com/eu81273
+  MIT License
+*/
+
+
+[data-tooltip-text]:hover {
+  position: left;
+}
+
+[data-tooltip-text]:hover:after {
+  background-color: RGB(0, 0, 0, 1);
+
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+
+  border-radius: 5px;
+
+  color: #FFFFFF;
+
+  font-size: 4vw;
+  line-height: 4.5vw;
+  content: attr(data-tooltip-text);
+  text-align: left;
+  z-index: 999;
+
+  padding: 1vw;
+  top: 0%;   
+  position: absolute;
+  width: 30vw;
+
+  word-wrap: break-word;
+
+  z-index: 999;
+}
+
+
+/* ---- 호버 ----*/
+
+
+
+
+
+/* ---- 서체에 적용되는 속성 ---- */
+
+.element-item {
+  position: absolute;
+  float: left;
+
+  width: 6vw;
+  height: 6vw;
+
+  margin: 0px;
+  padding: 0px;
+  background: #888;
+  color: #262524;
+  z-index: 99;
+}
+
+
+
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.element-item .monthly {
+  font-family: 'Heebo';
+  position: absolute;
+  padding: 0.3vw;
+  top: 0vw;
+  font-size: 0.8vw;
+    overflow: hidden;
+}
+
+.element-item .symbol {
+  font-family: 'Heebo';
+  position: absolute;
+  padding: 0.3vw;
+  top: 1vw;
+  font-size: 0.8vw;
+    overflow: hidden;
+}
+
+.element-item .number {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-family: earth-linecurve;
+  font-size: 55vw;
+  color: transparent;
+  z-index: 999;
+    overflow: hidden;
+}
+
+
+
+
+
+/* ---- 배경에 적용되는 속성 ---- */
+
+
+.element-item.transition      {background: hsl( 0, 0%, 0%); }
+.element-item.fin      {
+    width: 8vw;
+    height: 8vw;
+
+    outline: px solid white;}
+
+.element-item.bizcard         {background: hsl( 55, 100%, 50%); }
+.element-item.qq              {background: hsl( 90, 70%, 50%); }
+.element-item.metal           {background: hsl( 250, 90%, 50%); }
+.element-item.workshop        {background: hsl( 100, 50, 50);}
+.element-item.qq2             {background: hsl( 108, 100%, 50%); }
+
+.element-item.purple          {background: hsl( 100, 100%, 50%); }
+ 
